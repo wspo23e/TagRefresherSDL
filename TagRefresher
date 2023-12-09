@@ -1,0 +1,20 @@
+local chat = function(MSG)
+    game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(MSG, "All")
+   end  
+
+   local ScreenGui = Instance.new("ScreenGui")
+   local TextButton = Instance.new("TextButton")
+
+   ScreenGui.Name = "Screen Gui"
+   ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+   
+   TextButton.Parent = ScreenGui
+   TextButton.Position = UDim2.new(0.00959232636, 0, 0.073170729, 0)
+   TextButton.Size = UDim2.new(0, 184, 0, 50)
+   TextButton.Font = Enum.Font.ArialBold
+   TextButton.Text = "Refresh tags (use if gets tagged)"
+   TextButton.TextSize = 12.000
+
+TextButton.MouseButton1Click:connect(function()
+    chat("⁥⁥⁥⁥⁥⁥⁥⁥⁥ ⁥⁥⁥⁥⁥⁥⁥⁥")
+end)
